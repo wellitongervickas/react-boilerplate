@@ -9,7 +9,7 @@ import * as rootActions from '../store/actions/root';
 import { history } from '../store';
 import { Props } from './interface';
 
-class App extends React.Component<Props> {
+export class App extends React.Component<Props> {
   static defaultProps: Props = {
     setRootInitialized: () => { },
     setRootSagasInitialized: () => { },

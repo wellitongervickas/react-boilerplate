@@ -12,6 +12,14 @@ describe('root', () => {
     payload: true,
   }
 
+  const resetRootActionExpected = {
+    type: 'RESET_ROOT_STATE',
+  }
+
+  it('should action to reset root reducer', () => {
+    expect(rootActions.resetRootState()).toEqual(resetRootActionExpected);
+  })
+
   it('should action to initialize root reducer', () => {
     expect(rootActions.setRootInitialized(true)).toEqual(rootActionExpected);
   })
