@@ -1,0 +1,7 @@
+[ignore]
+[include]
+[libs]
+[lints]
+[options]
+module.file_ext=.txt
+[strict]
