@@ -4,10 +4,13 @@ import * as React from 'react';
 import type { Node } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Route, Switch } from 'react-router';
 import { ConnectedRouter } from 'connected-react-router';
 import * as rootActions from '../store/actions/root';
+import config from '../config';
 import { history } from '../store';
 import { Props } from './interface';
+import { RoutesInterface } from '../utils/interfaces/routes/routes-interface';
 
 export class App extends React.Component<Props> {
   static defaultProps: Props = {
@@ -24,12 +27,16 @@ export class App extends React.Component<Props> {
     setRootSagasInitialized(true);
   }
 
-  renderMain = () => [
+  renderMain = (): Node => [
     <section key="header">
       <header>Header</header>
     </section>,
     <section key="content">
-      <main>Content</main>
+      <main>
+        <Switch history={history}>
+          {config.routes.map<RoutesInterface>(item => <Route key={item.key} {...item} />)}
+        </Switch>
+      </main>
     </section>,
     <section key="footer">
       <footer>Footer</footer>

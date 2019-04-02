@@ -33,7 +33,43 @@ ShallowWrapper {
       </section>
       <section>
         <main>
-          Content
+          <Switch
+            history={
+              Object {
+                "action": "POP",
+                "block": [Function],
+                "createHref": [Function],
+                "go": [Function],
+                "goBack": [Function],
+                "goForward": [Function],
+                "length": 1,
+                "listen": [Function],
+                "location": Object {
+                  "hash": "",
+                  "pathname": "/",
+                  "search": "",
+                  "state": undefined,
+                },
+                "push": [Function],
+                "replace": [Function],
+              }
+            }
+          >
+            <Route
+              component={[Function]}
+              exact={true}
+              name="WELCOME"
+              path="/"
+            />
+            <Route
+              component={[Function]}
+              name="NOT_FOUND_PAGE"
+              path="/not-found"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>
         </main>
       </section>
       <section>
