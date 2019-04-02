@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
     "connected-react-router": "^6.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.11.2",
@@ -32,8 +33,12 @@
   },
   "jest": {
     "collectCoverageFrom": [
-      "src/utils/**/*.{js,jsx,ts,tsx}",
+      "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/src/setupTests.js",
+      "!<rootDir>/src/store/sagas/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/utils/interfaces/**/*.{js,jsx,ts,tsx}"
     ]
   },

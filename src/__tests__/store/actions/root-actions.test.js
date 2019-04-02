@@ -1,6 +1,6 @@
 import * as rootActions from '../../../store/actions/root'
 
-describe('root', () => {
+describe('Root Actions', () => {
 
   const rootActionExpected = {
     type: 'SET_ROOT_INITIALIZED',

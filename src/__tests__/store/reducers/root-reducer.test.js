@@ -1,7 +1,7 @@
 import rootReducer from '../../../store/reducers/root';
 import * as rootActions from '../../../store/actions/root';
 
-describe('root', () => {
+describe('Root Reducers', () => {
 
   it('should return the initial state', () => {
     expect(rootReducer(undefined, {})).toEqual({

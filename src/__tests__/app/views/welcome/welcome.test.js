@@ -3,11 +3,13 @@ import { shallow } from 'enzyme';
 import { Welcome } from '../../../../app/views/welcome';
 import renderer from 'react-test-renderer';
 
-it('renders without crashing', () => {
-  shallow(<Welcome />);
-});
+describe('Welcome', () => {
+  it('renders without crashing', () => {
+    shallow(<Welcome />);
+  });
 
-it('renders with snapshot', () => {
-  const tree = shallow(<Welcome />)
-  expect(tree).toMatchSnapshot();
-});
+  it('renders with snapshot', () => {
+    const tree = shallow(<Welcome />)
+    expect(tree).toMatchSnapshot();
+  });
+})
