@@ -25,7 +25,7 @@
   },
   "scripts": {
     "lint": "eslint ./src",
-    "lint-fix": "eslint ./src --fix",
+    "lint:fix": "eslint ./src --fix",
     "start": "react-scripts start",
     "dev": "PORT=8080 npm start",
     "build-js": "npm run lint && npm run test:build && react-scripts build",
