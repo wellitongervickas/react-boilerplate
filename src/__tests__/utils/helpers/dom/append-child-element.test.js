@@ -59,7 +59,6 @@ describe('Dom Helper', () => {
     jest.advanceTimersByTime(1000);
     expect(callback).toBeCalled();
     expect(callback).toHaveBeenCalledTimes(1);
-
   })
 
   it('should called function append document', () => {
@@ -67,7 +66,6 @@ describe('Dom Helper', () => {
     mockFunc();
 
     expect(mockFunc).toBeCalled();
-
   })
 
   it('should called function append document without element', () => {
