@@ -90,11 +90,4 @@ describe('Dom Helper', () => {
 
     expect(mockFunc).toBeCalled();
   })
-
-  it('should called function append document with lazy load', () => {
-    const mockFunc = jest.fn(() => appendElement('body', element, true));
-    mockFunc();
-
-    expect(mockFunc).toBeCalled();
-  })
 })
