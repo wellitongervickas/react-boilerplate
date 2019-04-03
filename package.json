@@ -2,6 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
@@ -23,8 +24,13 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "PORT=8080 npm start",
+    "build-js": "npm run lint && npm run test:build && react-scripts build",
+    "build": "REACT_APP_STAGE=production GENERATE_SOURCEMAP=false npm run build-js",
+    "build:homolog": "REACT_APP_STAGE=homologation GENERATE_SOURCEMAP=false npm run build-js",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage",
     "test:build": "react-scripts test --no-watch",
@@ -35,9 +41,11 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
+      "!<rootDir>/src/**/interface.{js,jsx,ts,tsx}",
       "!<rootDir>/src/index.js",
       "!<rootDir>/src/serviceWorker.js",
       "!<rootDir>/src/setupTests.js",
+      "!<rootDir>/src/config/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/store/sagas/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/src/utils/interfaces/**/*.{js,jsx,ts,tsx}"
     ]

@@ -10,7 +10,7 @@ const defaultParams: Params = {
   seconds: 2000,
 };
 
-const insertGoogleFonts = (params = { ...defaultParams }) => {
+const insertGoogleFonts = (params: Params = { ...defaultParams }) => {
   const { url, lazy, seconds } = params;
 
   const e = document.createElement('link');

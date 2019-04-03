@@ -1,0 +1,14 @@
+{
+  "ERROR_GENERAL": "Ocorreu um erro!",
+  "ERROR_TO_SEARCHING_OFFERS": "Error ao buscar ofertas!",
+  "ERROR_SESSION_EXPIRED": "Sessao expirada!",
+  "ERROR_NOT_AUTHORIZED": "Não autorizado!",
+  "ERROR_FORBIDDEN": "Acesso negado!",
+  "ERROR_PAGE_NOT_FOUND": "Página não encontrada!",
+  "ERROR_METHOD_NOT_ALLOWED": "Método não habilitado!",
+  "ERROR_UNPROCESSABLE_ENTITY": "Parâmetros incorretos!",
+  "ERROR_TOO_MANY_REQUESTS": "Excedido número de requisições!",
+  "ERROR_SERVER_ERROR": "Erro no servidor",
+  "ERROR_SERVICE_UNAVAILABLE": "Serviço indisponível",
+  "ERROR_BAR_GATEWAY": "Erro no servidor"
+}
