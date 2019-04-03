@@ -23,7 +23,7 @@ describe('Dom Helper', () => {
     expect(mockFunc).toBeCalled();
   })
 
-  it('should called function append child and child', () => {
+  it('should called function append element and child', () => {
     const mockFunc = jest.fn(() => appendChildElement({
       childName: 'body',
       element,
