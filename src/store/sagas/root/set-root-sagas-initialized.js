@@ -7,6 +7,6 @@ import { ActionInterface } from '../../../utils/interfaces/store/action-interfac
 export default function* setRootSagasInitialized(action: ActionInterface): Saga {
   yield put({
     type: 'SET_ROOT_SAGAS_INITIALIZED',
-    payload: action.payload || false,
+    payload: action && action.payload ? action.payload : false,
   });
 }
