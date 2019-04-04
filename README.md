@@ -1,4 +1,6 @@
 # React Boilerplate
+##### Understand Redux Sagas Flow
+See [ Redux flow ](https://whimsical.co/SW117wxSxYRbNVityjuGV9) with redux sagas
 ##### Docker test localhost:3000
 *Keep in mind to run npm install and npm run build before run docker*
 ###### Create a build
