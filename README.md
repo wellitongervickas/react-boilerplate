@@ -11,7 +11,7 @@ docker run -p 3000:3000 DOCKERNAME
 - Store Actions
 - Store Reduces
 ~~~~
-Partial skip services and sagas
+Partially skip services and sagas
 ~~~~
 ##### Npm run scripts
 - npm install *(Install packages)*
